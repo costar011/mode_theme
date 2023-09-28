@@ -95,3 +95,21 @@ body {
     background: var(--ses-color);
     transition: all .4s;
 }
+
+.darkMode input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    -webkit-appearance: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.darkMode input:checked ~ .box {
+    transform: rotate(180deg);
+}
+
+.darkMode input:checked ~ .box i {
+    transform: rotate(180deg);
+}
